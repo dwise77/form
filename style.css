@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #DB0B45, midnightblue)
+}
+form{
+  height: 350px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+.wrapper{
+   height: 350px;
+   width: 300px;
+   position: relative;
+   display: block;
+   background: transparent;
+   transform: translateX(0px);
+   transition: 3s ease-in-out;
+ }
+ .background{
+   height: 350px;
+   width: 300px;
+   background: rgba(255, 255, 255, .2);
+   backdrop-filter: blur(2px);
+   overflow: hidden;
+   border-radius: 10px;
+ } 
+ .sign-up{
+   position: absolute;
+   top: 0px;
+   left: 350px;
+ }
+ 
+h2{
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+input{
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  margin: 15px 0;
+  padding: 5px;
+  color: white;
+}
+.section{
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  display: block;
+}
+
+label{
+  position: absolute;
+  color: white;
+  bottom: 5px;
+  transition: .1s;
+}
+.submit{
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: linear-gradient(#DB0B45, midnightblue);
+  margin: 20px 0 20px 0px;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 18px;
+}
+p{
+  display: inline-block;
+  color: white;
+}
+span a{
+  text-decoration:none;
+  color: #DB0B45;
+}
+.move{
+  bottom: 25px;
+}
+.shift{
+  bottom: 25px;
+}
+.slide{
+  transform: translateX(-350px);
+}
